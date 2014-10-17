@@ -57,6 +57,11 @@
             name="name"
             restorable="true">
       </view>
+      <view
+            class="aoesoft.ui.Now"
+            id="aoesoft.ui.Now"
+            name="Now">
+      </view>
    </extension>
    <extension
          point="org.eclipse.ui.actionSets">

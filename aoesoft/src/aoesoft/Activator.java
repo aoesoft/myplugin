@@ -1,6 +1,7 @@
 package aoesoft;
 
 import org.eclipse.ui.plugin.AbstractUIPlugin;
+import org.eclipse.wb.swt.ResourceManager;
 import org.osgi.framework.BundleContext;
 
 /**
@@ -36,6 +37,7 @@ public class Activator extends AbstractUIPlugin {
 	public void stop(BundleContext context) throws Exception {
 		plugin = null;
 		super.stop(context);
+		ResourceManager.dispose();
 	}
 
 	/**
